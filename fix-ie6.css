@@ -1,0 +1,18 @@
+div#page {
+  width: 76em;
+}
+
+div#content {
+	margin-left: 15em;
+}
+
+#meta {
+  position: static;
+  z-index: 90;
+}
+
+div#footer #copyright {
+  position: relative;
+  bottom: 2em;
+  width: 99%;
+}
