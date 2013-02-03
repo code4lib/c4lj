@@ -4,7 +4,6 @@
 			<div id="content">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="article" id="post-<?php the_ID(); ?>">
-					<?php edit_post_link('Edit this article', '<p class="editlink">', '</p>'); ?>
 					<p id="issueDesignation"><?php foreach( (get_the_category()) as $cat ) {
               $parent = get_category($cat->category_parent);
 							if ( $parent && $parent->category_nicename == "issues" ) { // category should be child of Issues
